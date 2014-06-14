@@ -21,6 +21,9 @@
 		8EF1566E1944D14D00214EBB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EF156501944D14D00214EBB /* UIKit.framework */; };
 		8EF156761944D14D00214EBB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EF156741944D14D00214EBB /* InfoPlist.strings */; };
 		8EF156781944D14D00214EBB /* DraggableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF156771944D14D00214EBB /* DraggableTests.m */; };
+		8EF156831944D1A800214EBB /* UIView+BCODraggable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF156821944D1A800214EBB /* UIView+BCODraggable.m */; };
+		8EF156861944DDA300214EBB /* BCOCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF156851944DDA300214EBB /* BCOCustomView.m */; };
+		8EF1568A194C1F6800214EBB /* BCOTouchRooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF15689194C1F6800214EBB /* BCOTouchRooter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		8EF156731944D14D00214EBB /* DraggableTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DraggableTests-Info.plist"; sourceTree = "<group>"; };
 		8EF156751944D14D00214EBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8EF156771944D14D00214EBB /* DraggableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DraggableTests.m; sourceTree = "<group>"; };
+		8EF156811944D1A800214EBB /* UIView+BCODraggable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BCODraggable.h"; sourceTree = "<group>"; };
+		8EF156821944D1A800214EBB /* UIView+BCODraggable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BCODraggable.m"; sourceTree = "<group>"; };
+		8EF156841944DDA300214EBB /* BCOCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCOCustomView.h; sourceTree = "<group>"; };
+		8EF156851944DDA300214EBB /* BCOCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCOCustomView.m; sourceTree = "<group>"; };
+		8EF15688194C1F6800214EBB /* BCOTouchRooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCOTouchRooter.h; sourceTree = "<group>"; };
+		8EF15689194C1F6800214EBB /* BCOTouchRooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCOTouchRooter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +126,11 @@
 				8EF1565E1944D14D00214EBB /* Main.storyboard */,
 				8EF156611944D14D00214EBB /* BCOViewController.h */,
 				8EF156621944D14D00214EBB /* BCOViewController.m */,
+				8EF156841944DDA300214EBB /* BCOCustomView.h */,
+				8EF156851944DDA300214EBB /* BCOCustomView.m */,
+				8EF156811944D1A800214EBB /* UIView+BCODraggable.h */,
+				8EF156821944D1A800214EBB /* UIView+BCODraggable.m */,
+				8EF15687194C1F6800214EBB /* BCOTouchRooter */,
 				8EF156641944D14D00214EBB /* Images.xcassets */,
 				8EF156531944D14D00214EBB /* Supporting Files */,
 			);
@@ -150,6 +164,15 @@
 				8EF156741944D14D00214EBB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8EF15687194C1F6800214EBB /* BCOTouchRooter */ = {
+			isa = PBXGroup;
+			children = (
+				8EF15688194C1F6800214EBB /* BCOTouchRooter.h */,
+				8EF15689194C1F6800214EBB /* BCOTouchRooter.m */,
+			);
+			path = BCOTouchRooter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +273,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EF156861944DDA300214EBB /* BCOCustomView.m in Sources */,
 				8EF156631944D14D00214EBB /* BCOViewController.m in Sources */,
+				8EF156831944D1A800214EBB /* UIView+BCODraggable.m in Sources */,
 				8EF156591944D14D00214EBB /* main.m in Sources */,
 				8EF1565D1944D14D00214EBB /* BCOAppDelegate.m in Sources */,
+				8EF1568A194C1F6800214EBB /* BCOTouchRooter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +483,7 @@
 				8EF1567D1944D14D00214EBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EF1567E1944D14D00214EBB /* Build configuration list for PBXNativeTarget "DraggableTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +492,7 @@
 				8EF156801944D14D00214EBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
