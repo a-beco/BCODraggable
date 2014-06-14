@@ -3,7 +3,7 @@ BCODraggable
 
 This is the UIView category, which adds 'draggable' property like jQuery.
 
-#Usage
+##Usage
 ````objective-c
 #import "UIView + BCODraggable.h"
 
